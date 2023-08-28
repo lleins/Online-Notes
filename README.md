@@ -1,1 +1,1 @@
-# Online-Notes
+This is a 'gimmick' online webpage that takes notes and will send them to your gmail or you can download them direct to your pc. The only emails that it supports is gmail as of 2023-08-28.# Online-Notes
