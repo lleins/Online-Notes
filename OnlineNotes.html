@@ -1,0 +1,87 @@
+<html>
+
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="OnlineNotes.css" type="text/css" rel="stylesheet">
+    <script src="OnlineNotes.js" defer></script>
+    <title>Online Notes</title>
+</head>
+
+<body>
+    
+    <div id="TopText">
+        <p id="title">Online Notes</p>
+        <input id="GmailInput" type="text" placeholder="Gmail">
+        <button id="SendButton">Send</button>
+        <img id="SendImage" src="Images/SendImg.png" alt="Send Image">
+        <button id="DownloadButton" onclick="DownloadTxt()">Download</button>
+        <img id="Download_Img" src="Images/DownloadImg.png" alt="Download Image">
+    </div>
+    
+    <div id="Book_Container">
+        <img id="Book_Img" src="Images/OpenBook3.png" alt="Open Book">
+    </div>
+
+    <div id="InputTextContainer">
+        <div id="Page1_2">                  
+            <textarea  type="text" id="ListPage1" class="InputMessageBox" placeholder="Type Here..."></textarea>
+            <textarea  type="text" id="ListPage2" class="InputMessageBox" placeholder=""></textarea>
+            <p id="CharactersRemain">Remaining Characters: <span id="charCount">500</span></p>
+            <p id="CharactersRemain2">Remaining Characters: <span id="charCount2">500</span></p>
+
+            <textarea  type="text" id="ListPage3" class="InputMessageBox" placeholder="Type Here..."></textarea>
+            <textarea  type="text" id="ListPage4" class="InputMessageBox" placeholder=""></textarea>
+            <p id="CharactersRemain3">Remaining Characters: <span id="charCount3">500</span></p>
+            <p id="CharactersRemain4">Remaining Characters: <span id="charCount4">500</span></p>
+
+        </div>
+
+    </div>
+    
+    <div id="Pen_Container">
+        <img id="Pen_Img" src="Images/OldPen.png" alt="Pen">
+    </div>
+
+    <div id="NextPage_Container">
+        <img id="Arrow_ImgForward" src="Images/NxtPg.png" alt="Arrow Next Page" onclick="PageForwardSound()">
+    </div>
+
+    <div id="PrevPage_Container">
+        <img id="Arrow_ImgBack" src="Images/PrevPg2.png" alt="Arrow Prev Page" onclick="PageBackSound()">
+    </div>
+
+    <div id="InfoButton_Image">
+        <img id="InfoImage" src="Images/InfoImg.png" alt="Info Image" onclick="OpenInfoTab()">
+    </div>
+
+    <div id="InfoTab">
+        <p id="InfoText">To save notes enter your Gmail above and hit send or download.</p>
+    </div>
+
+    <div id="CloseTab">
+        <img id="CloseImage" src="Images/CloseImg.png" alt="Close Image" onclick="CloseInfoTab()">
+    </div>
+
+    <div id="SoundOn">
+        <img id="SoundOnImg" src="Images/SoundOn.png" alt="Sound On Image" onclick="SoundOnButton()">
+    </div>
+
+    <div id="SoundOff">
+        <img id="SoundOffImg" src="Images/SoundOff.png" alt="Sound Off Image" onclick="SoundOnButton()">
+    </div>
+    
+    <div id="ContactFormNotif">
+        <p id="ConfirmationNotif"   class="Notif">&nbsp; &nbsp; &nbsp; Notes Was Succesfully Sent!</p>
+        <p id="ProblemNotif"   class="Notif">&nbsp; &nbsp; &nbsp; Notes Cannot Be Sent At This Time.</p>
+        <img id="FailImg" class="NotifImg" src="Images/FailImg.png" alt="FailImg">
+        <img id="SuccessImg" class="NotifImg" src="Images/SuccessImg2.png" alt="SuccessImg">
+    </div>
+
+</body>
+
+
+
+
+
+</html>
